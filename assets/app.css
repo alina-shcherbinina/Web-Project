@@ -1,0 +1,173 @@
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+html,
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	scroll-behavior: smooth;
+	text-rendering: optimizeSpeed;
+	font-family: Oxanium, regular;
+	font-size:16px;
+	line-height: 1.25;
+	color: #000;
+	background-color: #fff;
+}
+
+input,
+button,
+textarea,
+select {
+	font: inherit;
+	line-height: inherit; 
+}
+
+textarea{
+	min-height: 100px;
+	resize: vertical;
+}
+
+img {
+	max-width: 100%;
+	display: block;
+}
+
+a {
+	color: blue;
+	text-decoration: underline;
+}
+
+a:hover,
+a:focus{
+	color: red;
+	text-decoration: underline;
+}
+
+
+p {
+	color: red;
+	text-decoration: underline;
+}
+
+h1 {
+	font-size: 2rem;
+	margin: 10px 0 15px;
+}
+
+
+.page-header {
+	min-height: 100px;
+	padding: 15px;
+}
+
+.page-footer{
+	min-height: 100px;
+	background: #ddd;
+	padding: 15px;
+}
+
+.page-header__container,
+.page-content__container,
+.page-footer__container {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 15px;
+}
+
+.add-task-form__heading,
+.task-list__heading {
+	font-weight: 500;
+	font-size: 1.5rem;  
+
+}
+
+.form-group {
+	display: block;
+	margin: 0 0 15px;
+}
+
+.form-group .form-group__label {
+	display: block;
+	margin: 0 0 5px;
+}
+
+.form-group .form-group__control {
+	display: block;
+	margin: 0 0 5px;
+	width: 100%;
+
+ }
+
+ input[type="text"].form-group__control,
+ input[type="date"].form-group__control,
+ input[type="datetime"].form-group__control,
+ select.form-group__control{
+ 	height: 26px;
+ }
+
+ .task-list__table .table {
+ 	width:100%;
+ 	border-collapse: collapse; 
+ }
+
+ .task-list__table .table td,
+ .task-list__table .table th {
+ 	border-width: 1px #777;
+ 	padding: 3px 5px;
+ 	text-align: left;
+ }
+
+ .task-list__table .table th {
+ 	background-color: #eee;
+ }
+
+.task-list__toolbar {
+	display: grid;
+	grid-auto-flow: column;
+	grid-auto-columns: auto auto 1fr;
+	gap: 10px;
+	margin-bottom: 20px;
+}
+
+.task-list__toolbar .tool-item {
+}
+
+.tool-list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.task-workspace {
+	display: grid;
+	grid-auto-flow: column;
+	grid-auto-columns: 1fr 2fr;
+	gap: 30px;
+}
+
+.failed {
+	color: red;
+}
+
+.error{
+	color: red;
+	font-weight: 400;
+}
