@@ -29,8 +29,8 @@ body {
 	font-family: Oxanium, regular;
 	font-size:16px;
 	line-height: 1.25;
-	color: #000;
-	background-color: #fff;
+	color: #fff;
+	background-color: #000;
 }
 
 input,
@@ -71,6 +71,7 @@ p {
 h1 {
 	font-size: 2rem;
 	margin: 10px 0 15px;
+	color: #add8e6;
 }
 
 
@@ -81,7 +82,7 @@ h1 {
 
 .page-footer{
 	min-height: 100px;
-	background: #ddd;
+	background: #302b2b;
 	padding: 15px;
 }
 
@@ -137,7 +138,7 @@ h1 {
  }
 
  .task-list__table .table th {
- 	background-color: #eee;
+ 	background-color: #302b2b;
  }
 
 .task-list__toolbar {
